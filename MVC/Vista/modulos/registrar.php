@@ -25,11 +25,11 @@ if (!$_SESSION["Ingreso"]) {
 
     <input type="submit" value="Registrar">
 
+    <?php
+
+    $registrar = new EmpleadosC();
+    $registrar->RegistrarEmpleadosC();
+
+    ?>
+
 </form>
-
-<?php
-
-$registrar = new EmpleadosC();
-$registrar -> RegistrarEmpleadosC();
-
-?>
